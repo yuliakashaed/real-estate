@@ -30,6 +30,19 @@
       padding: 19px 35px
     &__input
       max-width: 283px
+  .footer
+    &-info
+      margin-right: 22px
+    &__text
+      font-size: 14px
+      line-height: 20px
+      max-width: 190px
+    &-list
+      margin-right: 24px
+      &:nth-child(2n)
+        margin-right: 24px
+    &-contacts
+      margin-left: 0
 @media (max-width: 992px)
   .container,
     max-width: 700px
@@ -76,6 +89,19 @@
       margin-bottom: 30px
     &__btn
       padding: 19px 43px
+  .footer
+    &-wrapper
+      flex-wrap: wrap
+    &-info
+      margin-bottom: 30px
+    &-list
+      &:last-child
+        margin-right: 0
+    &-contacts
+      flex-direction: row
+      align-items: baseline
+    &__phone
+      margin-right: 60px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -139,6 +165,24 @@
       max-width: 360px
     &__btn
       padding: 19px 73px
+  .footer
+    &-info
+      max-width: 100%
+      margin-bottom: 40px
+      margin-right: 10px
+    &__text
+      font-size: 16px
+      max-width: 225px
+    &-contacts
+      order: 0
+      flex-direction: column
+      margin-top: 10px
+    &-nav
+      order: 1
+    &-list
+      margin-right: 40px
+      &:nth-child(2n)
+        margin-right: 40px
 
 @media (max-width: 576px)
   .hero
@@ -193,6 +237,7 @@
         font-size: 14px
         line-height: 20px
   .newsletter
+    margin-bottom: 147px
     &__title
       max-width: 222px
       padding-left: 0
@@ -202,6 +247,31 @@
     &__input
       margin-right: 0
       margin-bottom: 20px
+
+  .footer
+    &-list
+      margin-right: 23px
+      &:nth-child(2n)
+        margin-right: 23px
+    &__email
+      margin-bottom: 20px
+
+@media (max-width: 540px)
+  .footer
+    &-info
+      margin-bottom: 58px
+      width: 270px
+    &-nav
+      width: 100%
+      order: 0
+      flex-direction: column
+    &-list
+      margin-bottom: 38px
+    &-contacts
+      margin-top: 0
+
+@media (max-width: 430px)
+  .newsletter
     &__btn
       padding: 19px 30px
 

@@ -665,6 +665,83 @@ body {
   cursor: pointer;
 }
 
+.footer {
+  padding-bottom: 60px;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-info {
+  max-width: 224px;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-list {
+  margin-right: 42px;
+}
+
+.footer-list:nth-child(2n) {
+  margin-right: 50px;
+}
+
+.footer-list__item {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 45px;
+}
+
+.footer__phone {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.footer__email {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -701,6 +778,23 @@ body {
   }
   .newsletter__input {
     max-width: 283px;
+  }
+  .footer-info {
+    margin-right: 22px;
+  }
+  .footer__text {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 190px;
+  }
+  .footer-list {
+    margin-right: 24px;
+  }
+  .footer-list:nth-child(2n) {
+    margin-right: 24px;
+  }
+  .footer-contacts {
+    margin-left: 0;
   }
 }
 
@@ -765,6 +859,28 @@ body {
   }
   .newsletter__btn {
     padding: 19px 43px;
+  }
+  .footer-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-info {
+    margin-bottom: 30px;
+  }
+  .footer-list:last-child {
+    margin-right: 0;
+  }
+  .footer-contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .footer__phone {
+    margin-right: 60px;
   }
 }
 
@@ -859,6 +975,36 @@ body {
   .newsletter__btn {
     padding: 19px 73px;
   }
+  .footer-info {
+    max-width: 100%;
+    margin-bottom: 40px;
+    margin-right: 10px;
+  }
+  .footer__text {
+    font-size: 16px;
+    max-width: 225px;
+  }
+  .footer-contacts {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+  }
+  .footer-nav {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer-list {
+    margin-right: 40px;
+  }
+  .footer-list:nth-child(2n) {
+    margin-right: 40px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -936,6 +1082,9 @@ body {
     font-size: 14px;
     line-height: 20px;
   }
+  .newsletter {
+    margin-bottom: 147px;
+  }
   .newsletter__title {
     max-width: 222px;
     padding-left: 0;
@@ -947,6 +1096,41 @@ body {
     margin-right: 0;
     margin-bottom: 20px;
   }
+  .footer-list {
+    margin-right: 23px;
+  }
+  .footer-list:nth-child(2n) {
+    margin-right: 23px;
+  }
+  .footer__email {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer-info {
+    margin-bottom: 58px;
+    width: 270px;
+  }
+  .footer-nav {
+    width: 100%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-list {
+    margin-bottom: 38px;
+  }
+  .footer-contacts {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 430px) {
   .newsletter__btn {
     padding: 19px 30px;
   }

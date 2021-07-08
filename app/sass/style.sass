@@ -317,4 +317,45 @@
     border: none
     cursor: pointer
 
+//footer
+.footer
+  padding-bottom: 60px
+  &-wrapper
+    display: flex
+    justify-content: space-between
+  &-info
+    max-width: 224px
+  &__logo
+    display: block
+    margin-bottom: 22px
+  &__text
+    font-weight: 400
+    font-size: 16px
+    line-height: 20px
+  &-nav
+    display: flex
+  &-list
+    margin-right: 42px
+    &:nth-child(2n)
+      margin-right: 50px
+    &__item
+      margin-bottom: 10px
+      font-weight: 400
+      font-size: 16px
+      line-height: 20px
+  &-contacts
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-left: 45px
+  &__phone
+    margin-bottom: 12px
+    font-weight: 700
+    font-size: 18px
+    line-height: 22px
+  &__email
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+    color: #000
 @import 'media'
