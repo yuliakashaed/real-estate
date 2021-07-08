@@ -13,8 +13,20 @@ $(function () {
   $('.menu__list-link').on('click', function () {
   $('.menu').removeClass('menu--visible');
   $('.header__phone').removeClass('header__phone--visible');
+});
 
-
+$('.reviews-wrapper').slick({
+  slidesToShow: 2,
+  prevArrow: ' <button class="reviews__btn reviews__btn-prev"><img src="images/arrow-left.svg"alt="arrow"/></button>',
+  nextArrow: ' <button class="reviews__btn reviews__btn-next"><img src="images/arrow-right.svg"alt="arrow"/></button>',
+  responsive: [
+    {
+      breakpoint: 993,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
 });
 
 })

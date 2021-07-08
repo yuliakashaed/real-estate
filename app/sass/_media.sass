@@ -22,6 +22,9 @@
     &__item
       &-img
         width: 235px
+  .reviews
+    &-item
+      max-width: 450px
 @media (max-width: 992px)
   .container,
     max-width: 700px
@@ -57,6 +60,9 @@
     &__item
       &-img
         width: 360px
+  .reviews
+    &-item
+      max-width: 95%
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -120,7 +126,9 @@
   .hero
     margin-bottom: 125px
   .flats
+    margin-bottom: 70px
     &__title
+      padding-left: 0
       font-size: 18px
       line-height: 22px
     &__link
@@ -140,6 +148,31 @@
     &-item
       &__heart
         top: 278px
+  .reviews
+    &__btn
+      top: -73px
+      right: 3px
+      &-prev
+        right: 64px
+    &__title
+      margin-bottom: 39px
+      font-size: 18px
+      line-height: 22px
+      max-width: 160px
+    &-item
+      height: auto
+      padding: 26px 32px 40px 20px
+      &__top
+        margin-bottom: 23px
+        flex-direction: column
+      &__avatar
+        margin-bottom: 5px
+      &__title
+        font-size: 18px
+        line-height: 22px
+      &__text
+        font-size: 14px
+        line-height: 20px
 
 @media (max-width: 320px)
   .container
