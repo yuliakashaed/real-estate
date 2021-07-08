@@ -591,6 +591,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
+  max-height: 110px;
+  overflow: hidden;
 }
 
 .slick-list {
