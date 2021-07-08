@@ -25,6 +25,11 @@
   .reviews
     &-item
       max-width: 450px
+  .newsletter
+    &__btn
+      padding: 19px 35px
+    &__input
+      max-width: 283px
 @media (max-width: 992px)
   .container,
     max-width: 700px
@@ -63,6 +68,14 @@
   .reviews
     &-item
       max-width: 95%
+  .newsletter
+    &__form
+      flex-wrap: wrap
+    &__input
+      max-width: 300px
+      margin-bottom: 30px
+    &__btn
+      padding: 19px 43px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -121,6 +134,11 @@
       flex-direction: column
     &__title
       margin-bottom: 10px
+  .newsletter
+    &__input
+      max-width: 360px
+    &__btn
+      padding: 19px 73px
 
 @media (max-width: 576px)
   .hero
@@ -149,6 +167,7 @@
       &__heart
         top: 278px
   .reviews
+    margin-bottom: 67px
     &__btn
       top: -73px
       right: 3px
@@ -173,6 +192,18 @@
       &__text
         font-size: 14px
         line-height: 20px
+  .newsletter
+    &__title
+      max-width: 222px
+      padding-left: 0
+      margin-bottom: 35px
+      font-size: 18px
+      line-height: 22px
+    &__input
+      margin-right: 0
+      margin-bottom: 20px
+    &__btn
+      padding: 19px 30px
 
 @media (max-width: 320px)
   .container
@@ -242,3 +273,8 @@
       transition: all .3s
       &:hover
         box-shadow: 0px 4px 40px rgba(130, 130, 130, 0.29)
+  .newsletter
+    &__btn
+      transition: all .3s
+      &:hover
+        background-color: #2236A2
