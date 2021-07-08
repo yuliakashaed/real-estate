@@ -387,7 +387,7 @@ body {
 }
 
 .cards-item {
-  width: 558px !important;
+  width: 558px;
   min-height: 262px;
 }
 
